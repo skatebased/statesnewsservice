@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>How it works — States News Service</title>
+<meta name="description" content="Discover, monitor, structure, review: how States News Service turns official sources into a clean feed, with a zero-error delivery gate on every push.">
+<meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
+<meta property="og:title" content="How it works — States News Service">
+<meta property="og:description" content="Discover, monitor, structure, review: how States News Service turns official sources into a clean feed, with a zero-error delivery gate on every push.">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f7fa;color:#0f1826;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .btn-primary:hover{background:#2f5cab}
+
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  .site-nav{transition:opacity .25s ease}
+  .site-nav a{text-shadow:0 1px 3px rgba(6,15,28,.4)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8fb2e6;outline-offset:2px}
+</style>
+<script>
+(function(){if(window.__navHdr)return;window.__navHdr=1;function w(){var n=document.querySelector(".site-nav");if(!n){return setTimeout(w,100);}var last=0,solid=null;n.style.transition="opacity .3s ease, background-color .3s ease, box-shadow .3s ease";function pos(e){var t=e&&e.target;return (t&&t!==document&&t.nodeType===1&&t.scrollTop!=null)?t.scrollTop:(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0);}function setSolid(on){if(on===solid)return;solid=on;if(on){n.style.background="#0b1f3a";n.style.boxShadow="0 6px 20px rgba(8,22,39,.22)";n.style.borderBottom="1px solid rgba(255,255,255,.12)";}else{n.style.background="transparent";n.style.boxShadow="none";n.style.borderBottom="none";}}function apply(y){if(y<=8){n.style.opacity="1";n.style.pointerEvents="";setSolid(false);}else if(y>last+3){n.style.opacity="0";n.style.pointerEvents="none";}else if(y<last-3){n.style.opacity="1";n.style.pointerEvents="";setSolid(true);}last=y;}function s(e){apply(pos(e));}document.addEventListener("scroll",s,true);window.addEventListener("scroll",s,{passive:true});apply(0);}w();})();
+</script>
+</helmet>
+<div style="max-width:1240px;margin:0 auto;background:#f5f7fa">
+
+  <!-- NAV -->
+  <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label><div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
+      <a class="nav-link" href="coverage.html">Coverage</a>
+      <a class="nav-link" href="how-it-works.html" style="color:#fff">How it works</a>
+      <a class="nav-link" href="clients.html">Clients</a>
+      <a class="nav-link" href="about.html">About</a><a class="btn-primary" href="contact.html" style="background:#3b6fc4;color:#fff;padding:9px 18px;border-radius:5px;font-weight:600">Request access</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="background:#0b1f3a;color:#fff;padding:100px 44px 70px">
+    <div style="font:600 11px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:20px">How it works</div>
+    <h1 class="hero-title" style="font:500 52px/1.06 'Newsreader',serif;letter-spacing:-.02em;margin:0 0 20px;max-width:20ch">Four steps, from official source to clean feed.</h1>
+    <p style="font:400 18px/1.6 'Public Sans';color:#bcccdf;max-width:56ch;margin:0">We prefer official feeds and sitemaps over aggressive scraping, so the data stays legitimate, low-risk and reliable — and higher quality, because it comes from the source's own structured output.</p>
+  </div>
+
+  <!-- STEPS -->
+  <div style="padding:64px 44px 40px">
+    <div style="display:flex;flex-direction:column;gap:0">
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:34px 0;border-top:1px solid #dce3ec">
+        <div style="font:500 64px/1 'Newsreader',serif;color:#3b6fc4">01</div>
+        <div style="max-width:64ch"><h2 style="font:500 26px/1.2 'Newsreader',serif;margin:0 0 10px">Discover</h2><p style="font:400 16px/1.65 'Public Sans';color:#3f4c5e;margin:0">We build and maintain a master registry of official sources — starting from curated lists of roughly 2,500 government and public-interest sites, cleaned, deduplicated and normalized into one reliable list with a stable schema: source type, jurisdiction, homepage, press room, feed and sitemap URLs.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:34px 0;border-top:1px solid #dce3ec">
+        <div style="font:500 64px/1 'Newsreader',serif;color:#3b6fc4">02</div>
+        <div style="max-width:64ch"><h2 style="font:500 26px/1.2 'Newsreader',serif;margin:0 0 10px">Monitor</h2><p style="font:400 16px/1.65 'Public Sans';color:#3f4c5e;margin:0">Where a structured feed exists, we use it. We prefer official RSS, XML and Atom feeds, sitemaps and press-room indexes — collecting on polite, capped schedules that respect how publishers publish. High-value sources are captured across every stream, not pointed at a single news page.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:34px 0;border-top:1px solid #dce3ec">
+        <div style="font:500 64px/1 'Newsreader',serif;color:#3b6fc4">03</div>
+        <div style="max-width:64ch"><h2 style="font:500 26px/1.2 'Newsreader',serif;margin:0 0 10px">Structure</h2><p style="font:400 16px/1.65 'Public Sans';color:#3f4c5e;margin:0">Every document is normalized into one consistent NewsML-style schema and exported as clean XML or CSV — sourced, timestamped, with clean dates and body text. Indexes, navigation and boilerplate are filtered out. The relevance review is the product, not overhead.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:34px 0;border-top:1px solid #dce3ec;border-bottom:1px solid #dce3ec">
+        <div style="font:500 64px/1 'Newsreader',serif;color:#3b6fc4">04</div>
+        <div style="max-width:64ch"><h2 style="font:500 26px/1.2 'Newsreader',serif;margin:0 0 10px">Review & deliver</h2><p style="font:400 16px/1.65 'Public Sans';color:#3f4c5e;margin:0">We work in small batches with logs, checkpoints and manual review, keeping raw, working and final data separate. Before any client delivery, a hard QA gate blocks five defect classes — non-articles, boilerplate, duplicates, encoding errors and wrong dates — so nothing ships unchecked.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY FEEDS -->
+  <div style="padding:24px 44px 56px">
+    <div style="background:#eef2f7;border:1px solid #dce3ec;border-radius:14px;padding:44px 46px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center">
+      <div>
+        <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#3b6fc4;margin-bottom:16px">Why feeds over scraping</div>
+        <h2 style="font:500 30px/1.16 'Newsreader',serif;margin:0 0 14px">Legitimate by design, not by exception.</h2>
+        <p style="font:400 15.5px/1.65 'Public Sans';color:#3f4c5e;margin:0">Aggressive HTML scraping breaks constantly and strains publishers. By prioritizing official feeds, sitemaps and public indexes, we stay legitimate, low-risk and reliable — and data quality is higher because it comes from the source's own structured output.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="background:#fff;border:1px solid #dce3ec;border-radius:8px;padding:16px 18px;font:400 14px/1.5 'Public Sans';color:#0f1826"><b style="font-weight:600">Original source only</b><br><span style="color:#5a6b81">the governing body's own release, unaltered.</span></div>
+        <div style="background:#fff;border:1px solid #dce3ec;border-radius:8px;padding:16px 18px;font:400 14px/1.5 'Public Sans';color:#0f1826"><b style="font-weight:600">Comprehensive within scope</b><br><span style="color:#5a6b81">every stream a covered source puts out.</span></div>
+        <div style="background:#fff;border:1px solid #dce3ec;border-radius:8px;padding:16px 18px;font:400 14px/1.5 'Public Sans';color:#0f1826"><b style="font-weight:600">Always current</b><br><span style="color:#5a6b81">rosters auto-refresh; gaps trigger alerts.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUILD VS US -->
+  <div style="padding:24px 44px 56px">
+    <h2 style="font:500 30px/1.14 'Newsreader',serif;margin:0 0 8px">Why not just build it yourself?</h2>
+    <p style="font:400 15.5px/1.5 'Public Sans';color:#5a6b81;margin:0 0 28px;max-width:60ch">In-house monitoring looks simple until you run it. Here's what you'd own — and what we handle instead.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div style="background:#fff;border:1px solid #e7d7d4;border-radius:12px;padding:28px 30px">
+        <div style="font:600 11px 'Public Sans';letter-spacing:.09em;text-transform:uppercase;color:#b5544a;margin-bottom:18px">Build it in-house</div>
+        <div style="display:flex;flex-direction:column;gap:13px">
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>Crawlers break every time a site changes its markup.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>Official sources block automated access.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>Every source is a different format — nothing lines up.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>No relevance review: indexes, nav and boilerplate pollute the data.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>Rosters go stale after every election and appointment.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#5a6b81"><span style="color:#c47c73;font-weight:600">×</span><span>You own the maintenance — forever.</span></div>
+        </div>
+      </div>
+      <div style="background:#0b1f3a;color:#fff;border-radius:12px;padding:28px 30px">
+        <div style="font:600 11px 'Public Sans';letter-spacing:.09em;text-transform:uppercase;color:#8fb2e6;margin-bottom:18px">With States News Service</div>
+        <div style="display:flex;flex-direction:column;gap:13px">
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>Official feeds and sitemaps first — stable and permissioned.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>One clean schema across every source.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>Human relevance review keeps only real articles.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>Rosters auto-refresh; gaps trigger alerts.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>A zero-error gate blocks defects before delivery.</span></div>
+          <div style="display:flex;gap:12px;font:400 14px/1.5 'Public Sans';color:#dbe5f2"><span style="color:#6fa8e6;font-weight:600">✓</span><span>We run the pipeline — you just ingest.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAMPLE OUTPUT -->
+  <div style="padding:0 44px 56px">
+    <div style="display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:center">
+      <div>
+        <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#3b6fc4;margin-bottom:16px">The output</div>
+        <h2 style="font:500 30px/1.16 'Newsreader',serif;margin:0 0 14px">One clean record, every source.</h2>
+        <p style="font:400 15.5px/1.65 'Public Sans';color:#3f4c5e;margin:0">Every document arrives normalized to the same schema — headline, dateline, date, source, language and full body — as NewsML-style XML, CSV or JSON. No messy HTML to parse; ready to ingest on day one.</p>
+      </div>
+      <div style="background:#0b1f3a;border-radius:12px;overflow:hidden;box-shadow:0 12px 34px rgba(11,31,58,.16)">
+        <div style="display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.1)">
+          <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button>
+          </sc-for>
+        </div>
+        <pre style="margin:0;padding:20px 22px;overflow:auto;max-height:360px;font:400 12.5px/1.7 ui-monospace,Menlo,Consolas,monospace;color:#c8d6ea;white-space:pre">{{ sample }}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- DELIVERY / QA GATE -->
+  <div style="padding:0 44px 64px">
+    <div style="background:#0b1f3a;color:#fff;border-radius:14px;padding:48px 46px">
+      <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:16px">The zero-error delivery gate</div>
+      <h2 style="font:500 32px/1.14 'Newsreader',serif;margin:0 0 28px;max-width:26ch">Every push must pass the gate before it reaches a client.</h2>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:18px"><div style="font:600 13px 'Public Sans';margin-bottom:6px">Non-article</div><p style="font:400 12.5px/1.5 'Public Sans';color:#bcccdf;margin:0">indexes & nav blocked</p></div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:18px"><div style="font:600 13px 'Public Sans';margin-bottom:6px">Boilerplate</div><p style="font:400 12.5px/1.5 'Public Sans';color:#bcccdf;margin:0">templated cruft removed</p></div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:18px"><div style="font:600 13px 'Public Sans';margin-bottom:6px">Duplicates</div><p style="font:400 12.5px/1.5 'Public Sans';color:#bcccdf;margin:0">near-dupes filtered</p></div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:18px"><div style="font:600 13px 'Public Sans';margin-bottom:6px">Encoding</div><p style="font:400 12.5px/1.5 'Public Sans';color:#bcccdf;margin:0">zero mojibake, clean round-trip</p></div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:18px"><div style="font:600 13px 'Public Sans';margin-bottom:6px">Wrong date</div><p style="font:400 12.5px/1.5 'Public Sans';color:#bcccdf;margin:0">future/invalid dates caught</p></div>
+      </div>
+      <p style="font:400 14px/1.6 'Public Sans';color:#bcccdf;margin:26px 0 0;max-width:70ch">Delivery is over SFTP (or FTPS, S3, webhook), idempotent and atomic, with per-client formats and source filters. The gate is proven to block a deliberately-defective sample — not just to pass clean files — before any live credential is ever connected.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band" style="background:#3b6fc4;color:#fff;padding:56px 44px;display:flex;align-items:center;justify-content:space-between;gap:40px">
+    <h2 style="font:500 34px/1.1 'Newsreader',serif;margin:0;max-width:24ch">See what clean, structured data looks like.</h2>
+    <a href="contact.html" style="display:inline-flex;align-items:center;height:54px;padding:0 32px;background:#fff;color:#0b1f3a;font:600 15px 'Public Sans';border-radius:6px;white-space:nowrap">Request access →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#081627;color:#7f9dc9;padding:36px 44px;font:400 12px 'Public Sans';display:flex;justify-content:space-between">
+    <span>© 2026 States News Service</span><span>Official sources. Clean data.</span>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { fmt: 'xml' };
+  renderVals() {
+    const samples = {
+      xml: '<?xml version="1.0" encoding="ISO-8859-1"?>\n<NewsML>\n  <NewsItem>\n    <Identification>\n      <NewsIdentifier>\n        <ProviderId>statesnewsservice.com</ProviderId>\n        <DateId>20260721</DateId>\n        <NewsItemId>SNS-4F2A9C</NewsItemId>\n      </NewsIdentifier>\n    </Identification>\n    <NewsComponent>\n      <NewsLines>\n        <HeadLine>Governor signs infrastructure bill into law</HeadLine>\n        <DateLine>RICHMOND, Va.</DateLine>\n      </NewsLines>\n      <AdministrativeMetadata>\n        <Source>Office of the Governor</Source>\n        <SourceType>state_executive</SourceType>\n      </AdministrativeMetadata>\n      <DescriptiveMetadata>\n        <Language FormalName="en"/>\n        <DateTime>2026-07-21T14:05:00Z</DateTime>\n      </DescriptiveMetadata>\n      <ContentItem>\n        <DataContent>\n          <body>Full, unaltered text of the official release ...</body>\n        </DataContent>\n      </ContentItem>\n    </NewsComponent>\n  </NewsItem>\n</NewsML>',
+      csv: 'id,source,source_type,headline,dateline,date,language,url,body\nSNS-4F2A9C,"Office of the Governor",state_executive,"Governor signs infrastructure bill into law","RICHMOND, Va.",2026-07-21,en,https://example.gov/news/4f2a9c,"Full, unaltered text of the official release ..."',
+      json: '{\n  "id": "SNS-4F2A9C",\n  "source": "Office of the Governor",\n  "source_type": "state_executive",\n  "headline": "Governor signs infrastructure bill into law",\n  "dateline": "RICHMOND, Va.",\n  "date": "2026-07-21T14:05:00Z",\n  "language": "en",\n  "url": "https://example.gov/news/4f2a9c",\n  "body": "Full, unaltered text of the official release ..."\n}'
+    };
+    const mk = (id, label) => ({
+      label,
+      onClick: () => this.setState({ fmt: id }),
+      style: "appearance:none;border:none;cursor:pointer;padding:8px 16px;border-radius:7px;font:600 12.5px 'Public Sans';letter-spacing:.02em;" + (this.state.fmt === id ? 'background:#3b6fc4;color:#fff' : 'background:transparent;color:#8fb2e6')
+    });
+    return {
+      tabs: [mk('xml', 'XML'), mk('csv', 'CSV'), mk('json', 'JSON')],
+      sample: samples[this.state.fmt]
+    };
+  }
+}
+</script>
+</body>
+</html>

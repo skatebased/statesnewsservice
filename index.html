@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>States News Service — The primary-source government & public-interest feed</title>
+<meta name="description" content="States News Service turns ~2,500 official government and public-interest sources into one clean, structured feed — human-reviewed, delivered as XML or CSV. Since 1973.">
+<meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
+<meta property="og:title" content="States News Service — The primary-source government & public-interest feed">
+<meta property="og:description" content="States News Service turns ~2,500 official government and public-interest sources into one clean, structured feed — human-reviewed, delivered as XML or CSV. Since 1973.">
+<script src="./image-slot.js"></script>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f7fa;color:#0f1826;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .btn-primary:hover{background:#2f5cab}
+  .btn-ghost:hover{background:rgba(255,255,255,.16)}
+  .card:hover{border-color:#b9c6d8;box-shadow:0 8px 24px rgba(11,31,58,.08)}
+  input,textarea{font-family:'Public Sans',sans-serif;font-size:15px;color:#0f1826}
+  input:focus,textarea:focus{outline:none;border-color:#3b6fc4;box-shadow:0 0 0 3px rgba(59,111,196,.15)}
+
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  html,body{overflow-x:hidden}
+  .fullbleed{width:100vw;margin-left:calc(50% - 50vw)}
+  .hero-media{position:absolute;inset:0;overflow:hidden}
+  .hero-grid{position:absolute;inset:-20% 0;background-image:linear-gradient(rgba(127,157,201,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(127,157,201,.07) 1px,transparent 1px);background-size:46px 46px;animation:gridScroll 22s linear infinite;will-change:transform}
+  @keyframes gridScroll{from{transform:translateY(0)}to{transform:translateY(46px)}}
+  .hero-glow{position:absolute;inset:0;background:radial-gradient(58% 78% at 72% 26%,rgba(59,111,196,.45),transparent 62%);animation:glowDrift 16s ease-in-out infinite alternate;will-change:transform}
+  @keyframes glowDrift{from{transform:translate3d(-5%,-2%,0) scale(1)}to{transform:translate3d(6%,3%,0) scale(1.14)}}
+  .hero-sweep{position:absolute;top:-60%;height:220%;width:42%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.055),transparent);transform:rotate(9deg);animation:sweep 11s ease-in-out infinite}
+  @keyframes sweep{0%{left:-45%}62%,100%{left:126%}}
+  .hero-video{opacity:0;transition:opacity .9s ease}
+  @media (prefers-reduced-motion:reduce){.hero-grid,.hero-glow,.hero-sweep{animation:none}}
+  .site-nav{transition:opacity .25s ease}
+  .site-nav a{text-shadow:0 1px 3px rgba(6,15,28,.4)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8fb2e6;outline-offset:2px}
+</style>
+<script>
+(function(){if(window.__navHdr)return;window.__navHdr=1;function w(){var n=document.querySelector(".site-nav");if(!n){return setTimeout(w,100);}var last=0,solid=null;n.style.transition="opacity .3s ease, background-color .3s ease, box-shadow .3s ease";function pos(e){var t=e&&e.target;return (t&&t!==document&&t.nodeType===1&&t.scrollTop!=null)?t.scrollTop:(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0);}function setSolid(on){if(on===solid)return;solid=on;if(on){n.style.background="#0b1f3a";n.style.boxShadow="0 6px 20px rgba(8,22,39,.22)";n.style.borderBottom="1px solid rgba(255,255,255,.12)";}else{n.style.background="transparent";n.style.boxShadow="none";n.style.borderBottom="none";}}function apply(y){if(y<=8){n.style.opacity="1";n.style.pointerEvents="";setSolid(false);}else if(y>last+3){n.style.opacity="0";n.style.pointerEvents="none";}else if(y<last-3){n.style.opacity="1";n.style.pointerEvents="";setSolid(true);}last=y;}function s(e){apply(pos(e));}document.addEventListener("scroll",s,true);window.addEventListener("scroll",s,{passive:true});apply(0);}w();})();
+</script>
+</helmet>
+<div style="max-width:1240px;margin:0 auto;background:#f5f7fa">
+
+  <!-- NAV -->
+  <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label><div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
+      <a class="nav-link" href="coverage.html">Coverage</a>
+      <a class="nav-link" href="how-it-works.html">How it works</a>
+      <a class="nav-link" href="clients.html">Clients</a>
+      <a class="nav-link" href="about.html">About</a><a class="btn-primary" href="contact.html" style="background:#3b6fc4;color:#fff;padding:9px 18px;border-radius:5px;font-weight:600">Request access</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero fullbleed" style="position:relative;min-height:84vh;display:flex;align-items:center;overflow:hidden;background:#081627;color:#fff">
+    <div class="hero-media">
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-sweep"></div>
+      <video class="hero-video" muted loop playsinline preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><source src="uploads/5224-183786646_medium-ca188db6.mp4" type="video/mp4"></video>
+      <video class="hero-video" muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><source src="uploads/330264-caf9288d.mp4" type="video/mp4"></video>
+      <video class="hero-video" muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><source src="uploads/241522_medium-9abb132b.mp4" type="video/mp4"></video>
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,15,28,.93) 0%,rgba(6,15,28,.78) 44%,rgba(6,15,28,.30) 100%)"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,15,28,.72) 0%,rgba(6,15,28,.15) 14%,rgba(6,15,28,0) 26%)"></div>
+    </div>
+    <div style="position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;padding:96px 44px">
+      <div style="max-width:62ch">
+        <div style="font:600 11px/1 'Public Sans';letter-spacing:.18em;text-transform:uppercase;color:#8fb2e6;margin-bottom:24px;display:flex;align-items:center;gap:12px"><span style="width:26px;height:1px;background:#5a7cad"></span>The primary-source government feed · since 1973</div>
+        <h1 class="hero-title" style="font:500 66px/1.03 'Newsreader',serif;letter-spacing:-.02em;margin:0 0 24px;text-wrap:balance">Every official release, structured and delivered.</h1>
+        <p style="font:400 19px/1.6 'Public Sans';color:#c8d6e8;max-width:58ch;margin:0 0 36px">States News Service turns ~2,500 official sources — government, academia, think tanks, advocacy, industry and 28 governments abroad — into one clean, reviewable feed. Original documents, human-reviewed for relevance, normalized to a single schema you can build on.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <a class="btn-primary" href="contact.html" style="display:inline-flex;align-items:center;height:52px;padding:0 28px;background:#3b6fc4;color:#fff;font:600 14.5px 'Public Sans';border-radius:6px">Request access</a>
+          <a class="btn-ghost" href="how-it-works.html" style="display:inline-flex;align-items:center;height:52px;padding:0 28px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);font:600 14.5px 'Public Sans';border-radius:6px">How it works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT RIBBON -->
+  <div style="padding:0 44px;margin-top:-38px;position:relative;z-index:3">
+    <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;box-shadow:0 12px 34px rgba(11,31,58,.12);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden">
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 42px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">30K+</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">articles / month</div></div>
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 42px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">6.3M</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">documents archived</div></div>
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 42px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">2,500+</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">official sources tracked</div></div>
+      <div style="padding:28px"><div style="font:600 42px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">28</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">nations abroad</div></div>
+    </div>
+  </div>
+
+  <!-- PILLARS -->
+  <div style="padding:64px 44px 20px">
+    <h2 style="font:500 32px/1.1 'Newsreader',serif;margin:0 0 8px">Collected the right way.</h2>
+    <p style="font:400 15.5px/1.5 'Public Sans';color:#5a6b81;margin:0 0 32px;max-width:56ch">Public-interest infrastructure, not a raw crawl — built to be legitimate, low-risk and reliable.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+      <div class="card" style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:26px;transition:.15s"><div style="width:36px;height:36px;border-radius:8px;background:#eaf0f9;color:#3b6fc4;display:flex;align-items:center;justify-content:center;font:600 16px 'Public Sans';margin-bottom:16px">1</div><div style="font:600 15.5px 'Public Sans';margin-bottom:8px">Official sources first</div><p style="font:400 13.5px/1.55 'Public Sans';color:#5a6b81;margin:0">Government and institutional releases — public, official, non-paywalled. Never blogs.</p></div>
+      <div class="card" style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:26px;transition:.15s"><div style="width:36px;height:36px;border-radius:8px;background:#eaf0f9;color:#3b6fc4;display:flex;align-items:center;justify-content:center;font:600 16px 'Public Sans';margin-bottom:16px">2</div><div style="font:600 15.5px 'Public Sans';margin-bottom:8px">Feeds over scraping</div><p style="font:400 13.5px/1.55 'Public Sans';color:#5a6b81;margin:0">Official RSS, XML and sitemaps first — less breakage, more legitimacy, higher fidelity.</p></div>
+      <div class="card" style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:26px;transition:.15s"><div style="width:36px;height:36px;border-radius:8px;background:#eaf0f9;color:#3b6fc4;display:flex;align-items:center;justify-content:center;font:600 16px 'Public Sans';margin-bottom:16px">3</div><div style="font:600 15.5px 'Public Sans';margin-bottom:8px">Clean structured output</div><p style="font:400 13.5px/1.55 'Public Sans';color:#5a6b81;margin:0">A stable schema, exported as XML and CSV — sourced, timestamped, ready to ingest.</p></div>
+      <div class="card" style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:26px;transition:.15s"><div style="width:36px;height:36px;border-radius:8px;background:#eaf0f9;color:#3b6fc4;display:flex;align-items:center;justify-content:center;font:600 16px 'Public Sans';margin-bottom:16px">4</div><div style="font:600 15.5px 'Public Sans';margin-bottom:8px">Reviewable & reliable</div><p style="font:400 13.5px/1.55 'Public Sans';color:#5a6b81;margin:0">Small batches, logs, checkpoints, manual review. Nothing ships unchecked.</p></div>
+    </div>
+  </div>
+
+  <!-- COVERAGE PREVIEW -->
+  <div style="padding:52px 44px">
+    <div style="background:#0b1f3a;color:#fff;border-radius:14px;padding:48px 46px;display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center">
+      <div>
+        <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:18px">Far beyond government</div>
+        <h2 style="font:500 34px/1.14 'Newsreader',serif;margin:0 0 16px">Government, academia, advocacy, industry and abroad — held complete.</h2>
+        <p style="font:400 15px/1.6 'Public Sans';color:#bcccdf;margin:0 0 26px">We measure completeness against the known universe of each category. Where a roster changes — elections, appointments — it auto-refreshes and alerts the moment anything falls short.</p>
+        <a href="coverage.html" style="font:600 14px 'Public Sans';color:#8fb2e6">View full coverage →</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 34px">
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>U.S. Senators</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">100</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>Representatives</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">435</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>Governors</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">50</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>Attorneys General</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">50</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>Secretaries of State</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">50</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:400 14.5px 'Public Sans'"><span>Nations abroad</span><span style="font-family:'Newsreader',serif;color:#8fb2e6">28</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- USE CASES -->
+  <div style="padding:32px 44px 20px">
+    <h2 style="font:500 32px/1.1 'Newsreader',serif;margin:0 0 30px">Who it's for.</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="border-top:2px solid #3b6fc4;padding:22px 0 0"><h3 style="font:500 21px/1.2 'Newsreader',serif;margin:0 0 9px">Newsrooms & wires</h3><p style="font:400 14.5px/1.6 'Public Sans';color:#5a6b81;margin:0">Monitor every governor, AG and legislature in one feed. Never miss an official release.</p></div>
+      <div style="border-top:2px solid #3b6fc4;padding:22px 0 0"><h3 style="font:500 21px/1.2 'Newsreader',serif;margin:0 0 9px">Researchers</h3><p style="font:400 14.5px/1.6 'Public Sans';color:#5a6b81;margin:0">A clean, sourced, timestamped corpus of the public record for analysis at scale.</p></div>
+      <div style="border-top:2px solid #3b6fc4;padding:22px 0 0"><h3 style="font:500 21px/1.2 'Newsreader',serif;margin:0 0 9px">Policy & platforms</h3><p style="font:400 14.5px/1.6 'Public Sans';color:#5a6b81;margin:0">Track activity across jurisdictions — or build products on a feed you can trust.</p></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL removed pending real client quotes -->
+
+  <!-- CLIENTS -->
+  <div style="padding:8px 44px 56px;text-align:center">
+    <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#5a6b81;margin-bottom:26px">Our content powers the platforms you already use</div>
+    <div style="display:flex;align-items:stretch;border-top:1px solid #dce3ec;border-bottom:1px solid #dce3ec">
+      <div style="flex:1;height:98px;padding:26px 28px"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-lexisnexis" src="uploads/states-news-logo-pack/lexisnexis.svg" shape="rect" fit="contain" placeholder="LexisNexis"></image-slot></div>
+      <div style="flex:1;height:98px;padding:26px 28px;border-left:1px solid #dce3ec"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-refinitiv" src="uploads/states-news-logo-pack/refinitiv-legacy.svg" shape="rect" fit="contain" placeholder="Refinitiv"></image-slot></div>
+      <div style="flex:1;height:98px;padding:26px 28px;border-left:1px solid #dce3ec"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-gale" src="uploads/states-news-logo-pack/gale.svg" shape="rect" fit="contain" placeholder="Gale"></image-slot></div>
+      <div style="flex:1;height:98px;padding:26px 28px;border-left:1px solid #dce3ec"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-reuters" src="uploads/states-news-logo-pack/thomson-reuters-current.svg" shape="rect" fit="contain" placeholder="Reuters"></image-slot></div>
+      <div style="flex:1;height:98px;padding:26px 28px;border-left:1px solid #dce3ec"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-naviga" src="uploads/states-news-logo-pack/naviga-official.png" shape="rect" fit="contain" placeholder="Naviga"></image-slot></div>
+      <div style="flex:1;height:98px;padding:26px 28px;border-left:1px solid #dce3ec"><image-slot style="--is-frame-bg:transparent;--is-ring-display:none" id="logo-cision" src="uploads/states-news-logo-pack/cision.svg" shape="rect" fit="contain" placeholder="Cision"></image-slot></div>
+    </div>
+    <a href="clients.html" style="display:inline-block;margin-top:20px;font:600 14px 'Public Sans';color:#3b6fc4">See who we serve →</a>
+  </div>
+
+  <!-- CTA -->
+  <div class="fullbleed" style="background:#3b6fc4;color:#fff">
+    <div style="max-width:1240px;margin:0 auto;padding:60px 44px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
+      <h2 style="font:500 34px/1.12 'Newsreader',serif;margin:0;max-width:24ch">See what clean, structured data looks like.</h2>
+      <a href="contact.html" style="display:inline-flex;align-items:center;height:54px;padding:0 32px;background:#fff;color:#0b1f3a;font:600 15px 'Public Sans';border-radius:6px;white-space:nowrap">Request access →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#081627;color:#7f9dc9;padding:44px 44px 30px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
+      <div><div style="font:600 18px 'Newsreader',serif;color:#fff;margin-bottom:8px">States News Service</div><div style="font:400 13px/1.6 'Public Sans';max-width:34ch">The straight, unaltered record of government — collected at the source, delivered ready to use.</div></div>
+      <div style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Product</div><a class="nav-link" href="coverage.html" style="display:block">Coverage</a><a class="nav-link" href="how-it-works.html" style="display:block">How it works</a><a class="nav-link" href="clients.html" style="display:block">Clients</a></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Company</div><a class="nav-link" href="about.html" style="display:block">About</a><a class="nav-link" href="contact.html" style="display:block">Contact</a><span style="display:block">The Plains, Virginia</span></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Legal</div><a class="nav-link" href="privacy.html" style="display:block">Privacy</a><a class="nav-link" href="terms.html" style="display:block">Terms</a></div>
+      </div>
+    </div>
+    <div style="padding-top:20px;font:400 12px 'Public Sans';display:flex;justify-content:space-between"><span>© 2026 States News Service</span><span>Official sources. Clean data.</span></div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this._heroVideo(); }
+  _heroVideo() {
+    const vids = Array.from(document.querySelectorAll('.hero-video'));
+    if (!vids.length) { setTimeout(() => this._heroVideo(), 150); return; }
+    vids.forEach((v) => { v.muted = true; v.playsInline = true; });
+    const paint = (idx) => { vids.forEach((x, k) => { x.style.opacity = k === idx ? '1' : '0'; }); };
+    const mq = (q) => window.matchMedia && window.matchMedia(q).matches;
+    if (mq('(prefers-reduced-motion: reduce)')) {
+      const v = vids[0];
+      const still = () => paint(0);
+      if (v.readyState >= 2) still(); else { v.addEventListener('loadeddata', still, { once: true }); try { v.load(); } catch (e) {} }
+      return;
+    }
+    const HOLD = 6000;
+    let i = 0, timer = null;
+    const next = () => { i = (i + 1) % vids.length; show(i); };
+    const show = (idx) => {
+      const v = vids[idx];
+      const nx = vids[(idx + 1) % vids.length];
+      if (nx && nx.getAttribute('preload') === 'none') { try { nx.load(); } catch (e) {} }
+      try { v.currentTime = 0; } catch (e) {}
+      const p = v.play(); if (p && p.catch) p.catch(() => {});
+      if (v.readyState >= 2) paint(idx);
+      else v.addEventListener('canplay', () => { if (i === idx) paint(idx); }, { once: true });
+      clearTimeout(timer);
+      timer = setTimeout(next, HOLD);
+    };
+    show(0);
+  }
+}
+</script>
+</body>
+</html>

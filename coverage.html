@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Coverage — States News Service</title>
+<meta name="description" content="~2,500 official sources across government, academia, advocacy, industry and 28 nations. Every source public, official and non-paywalled.">
+<meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
+<meta property="og:title" content="Coverage — States News Service">
+<meta property="og:description" content="~2,500 official sources across government, academia, advocacy, industry and 28 nations. Every source public, official and non-paywalled.">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f7fa;color:#0f1826;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .btn-primary:hover{background:#2f5cab}
+  .cat:hover{border-color:#b9c6d8;background:#fbfcfe}
+
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  .site-nav{transition:opacity .25s ease}
+  .site-nav a{text-shadow:0 1px 3px rgba(6,15,28,.4)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8fb2e6;outline-offset:2px}
+</style>
+<script>
+(function(){if(window.__navHdr)return;window.__navHdr=1;function w(){var n=document.querySelector(".site-nav");if(!n){return setTimeout(w,100);}var last=0,solid=null;n.style.transition="opacity .3s ease, background-color .3s ease, box-shadow .3s ease";function pos(e){var t=e&&e.target;return (t&&t!==document&&t.nodeType===1&&t.scrollTop!=null)?t.scrollTop:(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0);}function setSolid(on){if(on===solid)return;solid=on;if(on){n.style.background="#0b1f3a";n.style.boxShadow="0 6px 20px rgba(8,22,39,.22)";n.style.borderBottom="1px solid rgba(255,255,255,.12)";}else{n.style.background="transparent";n.style.boxShadow="none";n.style.borderBottom="none";}}function apply(y){if(y<=8){n.style.opacity="1";n.style.pointerEvents="";setSolid(false);}else if(y>last+3){n.style.opacity="0";n.style.pointerEvents="none";}else if(y<last-3){n.style.opacity="1";n.style.pointerEvents="";setSolid(true);}last=y;}function s(e){apply(pos(e));}document.addEventListener("scroll",s,true);window.addEventListener("scroll",s,{passive:true});apply(0);}w();})();
+</script>
+</helmet>
+<div style="max-width:1240px;margin:0 auto;background:#f5f7fa">
+
+  <!-- NAV -->
+  <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label><div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
+      <a class="nav-link" href="coverage.html" style="color:#fff">Coverage</a>
+      <a class="nav-link" href="how-it-works.html">How it works</a>
+      <a class="nav-link" href="clients.html">Clients</a>
+      <a class="nav-link" href="about.html">About</a><a class="btn-primary" href="contact.html" style="background:#3b6fc4;color:#fff;padding:9px 18px;border-radius:5px;font-weight:600">Request access</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="background:#0b1f3a;color:#fff;padding:100px 44px 70px">
+    <div style="font:600 11px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:20px">Coverage</div>
+    <h1 class="hero-title" style="font:500 52px/1.06 'Newsreader',serif;letter-spacing:-.02em;margin:0 0 20px;max-width:22ch">Much more than government.</h1>
+    <p style="font:400 18px/1.6 'Public Sans';color:#bcccdf;max-width:60ch;margin:0">Roughly 2,500 official sources across every corner of public life — the executive, legislative and judicial branches, yes, but also universities, think tanks, advocacy groups, foundations, trade associations, political parties, museums and 28 governments abroad. Every source is public, official and non-paywalled.</p>
+  </div>
+
+  <!-- STAT ROW -->
+  <div style="padding:0 44px;margin-top:-38px">
+    <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;box-shadow:0 12px 34px rgba(11,31,58,.12);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden">
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 40px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">2,500+</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">official sources tracked</div></div>
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 40px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">50</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">states + 5 territories</div></div>
+      <div style="padding:28px;border-right:1px solid #eef1f5"><div style="font:600 40px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">30K+</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">articles compiled / month</div></div>
+      <div style="padding:28px"><div style="font:600 40px/1 'Public Sans';color:#0b1f3a;letter-spacing:-.02em">6.3M</div><div style="font:400 13px 'Public Sans';color:#5a6b81;margin-top:6px">documents since 2005</div></div>
+    </div>
+  </div>
+
+  <!-- COMPLETE UNIVERSE -->
+  <div style="padding:64px 44px 20px">
+    <h2 style="font:500 32px/1.1 'Newsreader',serif;margin:0 0 8px">Complete government coverage — verified weekly.</h2>
+    <p style="font:400 15.5px/1.5 'Public Sans';color:#5a6b81;margin:0 0 30px;max-width:62ch">Government is one pillar of many — and we hold its full universe. A completeness detector runs after every roster refresh and alerts on any gap. If the spec says we cover every U.S. senator, we hold all 100.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">U.S. Senators</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">100</span></div>
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">Representatives</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">435</span></div>
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">State Governors</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">50</span></div>
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">Attorneys General</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">50</span></div>
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">Secretaries of State</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">50</span></div>
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:10px;padding:24px 26px;display:flex;align-items:baseline;justify-content:space-between"><span style="font:500 16px 'Public Sans'">Nations abroad</span><span style="font:500 34px 'Newsreader',serif;color:#3b6fc4">28</span></div>
+    </div>
+  </div>
+
+  <!-- FULL TAXONOMY -->
+  <div style="padding:52px 44px 20px">
+    <h2 style="font:500 32px/1.1 'Newsreader',serif;margin:0 0 8px">The full universe we cover.</h2>
+    <p style="font:400 15.5px/1.5 'Public Sans';color:#5a6b81;margin:0 0 30px;max-width:60ch">Six broad domains, thousands of official sources. A sample of who's in the feed:</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Government & public sector</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">The White House and federal departments & agencies; all 50 governors, attorneys general and secretaries of state; state agencies, city & county governments and mayors' offices.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Congress & the courts</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">All 100 U.S. senators and 435 representatives, House & Senate committees, the U.S. Supreme Court and state supreme & federal courts.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Universities & research</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">Leading research universities, academic medical centers and independent research institutes across the country.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Think tanks & advocacy</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">Policy institutes and civic advocacy organizations from across the ideological spectrum.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Foundations, associations & parties</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">Trade and professional associations, labor unions and chambers of commerce; charitable foundations; and political party organizations and PACs.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:26px">
+        <div style="font:600 15.5px 'Public Sans';margin-bottom:14px">Culture & international</div>
+        <p style="font:400 13.5px/1.7 'Public Sans';color:#5a6b81;margin:0">Museums and cultural & sports organizations; multilateral and intergovernmental bodies; and 28 foreign governments across Europe, Asia, the Americas and Africa.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INTERNATIONAL -->
+  <div style="padding:52px 44px 20px">
+    <div style="background:#0b1f3a;color:#fff;border-radius:14px;padding:46px">
+      <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:16px">International</div>
+      <h2 style="font:500 30px/1.14 'Newsreader',serif;margin:0 0 26px;max-width:40ch">Over 200 sources across 28 nations — selected for global impact and English availability.</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+        <div><div style="font:600 12px 'Public Sans';color:#8fb2e6;margin-bottom:10px">Europe / EU</div><p style="font:400 13.5px/1.7 'Public Sans';color:#bcccdf;margin:0">UK, Germany, France, Italy, Spain, Belgium, Netherlands, Sweden, Norway, Ukraine, Vatican, Russia — plus major EU and multilateral institutions.</p></div>
+        <div><div style="font:600 12px 'Public Sans';color:#8fb2e6;margin-bottom:10px">Asia / Middle East</div><p style="font:400 13.5px/1.7 'Public Sans';color:#bcccdf;margin:0">Armenia, Azerbaijan, China, India, Japan, Pakistan, Saudi Arabia, South Korea, Thailand, Turkey, Vietnam.</p></div>
+        <div><div style="font:600 12px 'Public Sans';color:#8fb2e6;margin-bottom:10px">Other</div><p style="font:400 13.5px/1.7 'Public Sans';color:#bcccdf;margin:0">Canada, Brazil, Australia, Egypt, South Africa, and the African Union.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COVERAGE MAP -->
+  <div style="padding:52px 44px">
+    <div style="border:1px solid #dce3ec;border-radius:14px;background:#fff;overflow:hidden">
+      <iframe id="cov-map-frame" title="U.S. coverage map" style="width:100%;height:600px;border:0;display:block"></iframe>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band" style="background:#3b6fc4;color:#fff;padding:56px 44px;display:flex;align-items:center;justify-content:space-between;gap:40px">
+    <h2 style="font:500 34px/1.1 'Newsreader',serif;margin:0;max-width:26ch">Need a specific jurisdiction or source type?</h2>
+    <a href="contact.html" style="display:inline-flex;align-items:center;height:54px;padding:0 32px;background:#fff;color:#0b1f3a;font:600 15px 'Public Sans';border-radius:6px;white-space:nowrap">Tell us what you need →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#081627;color:#7f9dc9;padding:36px 44px;font:400 12px 'Public Sans';display:flex;justify-content:space-between">
+    <span>© 2026 States News Service</span><span>Official sources. Clean data.</span>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this._inject(); }
+  _inject() {
+    const frame = document.getElementById('cov-map-frame');
+    if (!frame) { setTimeout(() => this._inject(), 120); return; }
+    const SO = '<scr' + 'ipt', EC = '</scr' + 'ipt>';
+    const d3tag = SO + ' src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous">' + EC;
+    const topotag = SO + ' src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous">' + EC;
+    const counts = {"California":108,"New York":48,"Texas":45,"Pennsylvania":40,"Virginia":31,"Michigan":27,"Florida":27,"Illinois":25,"Maryland":25,"Washington":25,"North Carolina":25,"New Jersey":23,"District of Columbia":20,"Ohio":19,"Massachusetts":17,"Iowa":17,"Missouri":17,"Tennessee":17,"Minnesota":16,"Alabama":15,"Oregon":15,"Wisconsin":15,"Georgia":14,"Colorado":13,"Arizona":13,"Maine":13,"Connecticut":12,"Louisiana":12,"Arkansas":12,"Indiana":12,"Idaho":11,"Mississippi":11,"Kentucky":11,"Nevada":10,"Nebraska":10,"South Carolina":9,"New Hampshire":9,"West Virginia":9,"Oklahoma":8,"Kansas":7,"Hawaii":7,"Wyoming":7,"North Dakota":7,"Alaska":7,"Delaware":6,"New Mexico":6,"Rhode Island":6,"Vermont":6,"Montana":6,"Utah":5,"South Dakota":4};
+    const js = [
+      'var counts=' + JSON.stringify(counts) + ';',
+      'var color=d3.scaleSequential(function(t){return d3.interpolateRgbBasis(["#dbe6f5","#7aa3d8","#3b6fc4","#173a6b","#0b1f3a"])(t);}).domain([0,Math.sqrt(108)]);',
+      'function shade(v){return v?color(Math.sqrt(v)):"#e7ebf1";}',
+      'var svg=d3.select("svg");var tip=document.getElementById("tip");',
+      'd3.json("https://cdn.jsdelivr.net/npm/us-atlas@3.0.1/states-10m.json").then(function(us){',
+      'var fc=topojson.feature(us,us.objects.states);',
+      'var path=d3.geoPath(d3.geoAlbersUsa().fitSize([960,560],fc));',
+      'svg.append("g").selectAll("path").data(fc.features).join("path").attr("class","state").attr("d",path)',
+      '.attr("fill",function(d){return shade(counts[d.properties.name]||0);})',
+      '.on("mousemove",function(e,d){var n=counts[d.properties.name]||0;tip.innerHTML=d.properties.name+"<br><b>"+n+"</b> source"+(n===1?"":"s");tip.style.left=e.clientX+"px";tip.style.top=e.clientY+"px";tip.style.opacity=1;})',
+      '.on("mouseleave",function(){tip.style.opacity=0;});',
+      '}).catch(function(err){svg.append("text").attr("x",480).attr("y",280).attr("text-anchor","middle").attr("fill","#93a2b5").attr("font-family","Public Sans").text("Map failed to load.");});'
+    ].join('');
+    const css = '*{box-sizing:border-box}html,body{margin:0;background:#fff;font-family:\'Public Sans\',system-ui,sans-serif;color:#0f1826}#wrap{padding:8px 10px 4px}#head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:6px 6px 4px}#head h3{font:500 22px \'Newsreader\',serif;margin:0}#head p{font:400 13px \'Public Sans\';color:#5a6b81;margin:2px 0 0}#legend{display:flex;align-items:center;gap:10px;font:400 12px \'Public Sans\';color:#5a6b81}#bar{width:150px;height:10px;border-radius:3px;background:linear-gradient(90deg,#dbe6f5,#3b6fc4,#0b1f3a)}svg{width:100%;height:auto;display:block}.state{stroke:#fff;stroke-width:.75;transition:opacity .12s}.state:hover{opacity:.82;stroke:#0b1f3a;stroke-width:1.2}#tip{position:fixed;pointer-events:none;background:#0b1f3a;color:#fff;padding:8px 11px;border-radius:7px;font:500 12.5px \'Public Sans\';opacity:0;transform:translate(-50%,-142%);transition:opacity .1s;white-space:nowrap;box-shadow:0 6px 18px rgba(8,22,39,.3);z-index:10}#tip b{font-family:\'Newsreader\',serif;font-weight:500;font-size:15px}';
+    const body = '<div id="wrap"><div id="head"><div><h3>Sources in every state</h3><p>Hundreds of state &amp; local sources, plus federal and international. Shade = number of sources tracked.</p></div><div id="legend"><span>Fewer</span><div id="bar"></div><span>More</span></div></div><svg viewBox="0 0 960 560" preserveAspectRatio="xMidYMid meet"></svg></div><div id="tip"></div>';
+    frame.srcdoc = '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">' +
+      '<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">' +
+      d3tag + topotag + '<style>' + css + '
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+</style></head><body>' + body + SO + '>' + js + EC + '</body></html>';
+  }
+}
+</script>
+</body>
+</html>

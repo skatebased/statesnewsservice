@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>About — States News Service</title>
+<meta name="description" content="Since 1973, States News Service has made the public record usable — collecting official government and public-interest documents the right way and delivering them as clean, structured data.">
+<meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
+<meta property="og:title" content="About — States News Service">
+<meta property="og:description" content="Since 1973, States News Service has made the public record usable — official sources, collected the right way, delivered as clean structured data.">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f7fa;color:#0f1826;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .btn-primary:hover{background:#2f5cab}
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  .site-nav{transition:opacity .25s ease}
+  .site-nav a{text-shadow:0 1px 3px rgba(6,15,28,.4)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8fb2e6;outline-offset:2px}
+</style>
+<script>
+(function(){if(window.__navHdr)return;window.__navHdr=1;function w(){var n=document.querySelector(".site-nav");if(!n){return setTimeout(w,100);}var last=0,solid=null;n.style.transition="opacity .3s ease, background-color .3s ease, box-shadow .3s ease";function pos(e){var t=e&&e.target;return (t&&t!==document&&t.nodeType===1&&t.scrollTop!=null)?t.scrollTop:(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0);}function setSolid(on){if(on===solid)return;solid=on;if(on){n.style.background="#0b1f3a";n.style.boxShadow="0 6px 20px rgba(8,22,39,.22)";n.style.borderBottom="1px solid rgba(255,255,255,.12)";}else{n.style.background="transparent";n.style.boxShadow="none";n.style.borderBottom="none";}}function apply(y){if(y<=8){n.style.opacity="1";n.style.pointerEvents="";setSolid(false);}else if(y>last+3){n.style.opacity="0";n.style.pointerEvents="none";}else if(y<last-3){n.style.opacity="1";n.style.pointerEvents="";setSolid(true);}last=y;}function s(e){apply(pos(e));}document.addEventListener("scroll",s,true);window.addEventListener("scroll",s,{passive:true});apply(0);}w();})();
+</script>
+</helmet>
+<div style="max-width:1240px;margin:0 auto;background:#f5f7fa">
+
+  <!-- NAV -->
+  <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label>
+    <div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
+      <a class="nav-link" href="coverage.html">Coverage</a>
+      <a class="nav-link" href="how-it-works.html">How it works</a>
+      <a class="nav-link" href="clients.html">Clients</a>
+      <a class="nav-link" href="about.html" style="color:#fff">About</a>
+      <a class="btn-primary" href="contact.html" style="background:#3b6fc4;color:#fff;padding:9px 18px;border-radius:5px;font-weight:600">Request access</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="background:#0b1f3a;color:#fff;padding:100px 44px 70px">
+    <div style="font:600 11px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:20px">About</div>
+    <h1 class="hero-title" style="font:500 52px/1.06 'Newsreader',serif;letter-spacing:-.02em;margin:0 0 20px;max-width:24ch">Making the public record usable — since 1973.</h1>
+    <p style="font:400 18px/1.6 'Public Sans';color:#bcccdf;max-width:60ch;margin:0">Public information is everywhere and almost impossible to use. It lives on thousands of separate government and institutional sites, in inconsistent formats, behind clumsy navigation. States News Service turns it into a single, clean, structured, reviewable feed.</p>
+  </div>
+
+  <!-- MISSION -->
+  <div style="padding:64px 44px 20px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+      <div>
+        <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#3b6fc4;margin-bottom:16px">The problem</div>
+        <p style="font:400 17px/1.65 'Public Sans';color:#3f4c5e;margin:0">Governments and public institutions publish constantly — releases, statements, filings, rulings — but that record is scattered across thousands of sites and formats. For anyone who needs to monitor it at scale, it's technically available and practically out of reach.</p>
+      </div>
+      <div>
+        <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#3b6fc4;margin-bottom:16px">Our approach</div>
+        <p style="font:400 17px/1.65 'Public Sans';color:#3f4c5e;margin:0">We collect it the right way: original, official, non-paywalled sources; structured feeds before brittle scraping; human review to keep only what matters; and one clean schema out the other end. The result is data you can trust — consistent, sourced and export-ready.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACTS STRIP -->
+  <div style="padding:44px 44px">
+    <div style="background:#0b1f3a;color:#fff;border-radius:14px;padding:40px 46px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <div><div style="font:600 38px/1 'Public Sans';letter-spacing:-.02em">1973</div><div style="font:400 13px 'Public Sans';color:#bcccdf;margin-top:8px">delivering since</div></div>
+      <div><div style="font:600 38px/1 'Public Sans';letter-spacing:-.02em">6.3M</div><div style="font:400 13px 'Public Sans';color:#bcccdf;margin-top:8px">documents archived</div></div>
+      <div><div style="font:600 38px/1 'Public Sans';letter-spacing:-.02em">30K+</div><div style="font:400 13px 'Public Sans';color:#bcccdf;margin-top:8px">articles / month</div></div>
+      <div><div style="font:600 38px/1 'Public Sans';letter-spacing:-.02em">2,500+</div><div style="font:400 13px 'Public Sans';color:#bcccdf;margin-top:8px">official sources</div></div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <div style="padding:24px 44px 20px">
+    <h2 style="font:500 30px/1.1 'Newsreader',serif;margin:0 0 28px">What we hold to.</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+      <div style="border-top:2px solid #3b6fc4;padding:20px 0 0"><h3 style="font:600 15.5px 'Public Sans';margin:0 0 8px">Original source only</h3><p style="font:400 13.5px/1.6 'Public Sans';color:#5a6b81;margin:0">The governing body's own release, unaltered — never a rewrite.</p></div>
+      <div style="border-top:2px solid #3b6fc4;padding:20px 0 0"><h3 style="font:600 15.5px 'Public Sans';margin:0 0 8px">Legitimate by design</h3><p style="font:400 13.5px/1.6 'Public Sans';color:#5a6b81;margin:0">Official feeds and sitemaps first — low-risk and respectful of publishers.</p></div>
+      <div style="border-top:2px solid #3b6fc4;padding:20px 0 0"><h3 style="font:600 15.5px 'Public Sans';margin:0 0 8px">Reviewed, not raw</h3><p style="font:400 13.5px/1.6 'Public Sans';color:#5a6b81;margin:0">Human relevance review separates a feed from a crawl.</p></div>
+      <div style="border-top:2px solid #3b6fc4;padding:20px 0 0"><h3 style="font:600 15.5px 'Public Sans';margin:0 0 8px">Always current</h3><p style="font:400 13.5px/1.6 'Public Sans';color:#5a6b81;margin:0">Rosters self-refresh; gaps trigger alerts, so coverage never silently slips.</p></div>
+    </div>
+  </div>
+
+  <!-- COMPANY -->
+  <div style="padding:44px 44px 20px">
+    <div style="background:#fff;border:1px solid #dce3ec;border-radius:14px;padding:40px 44px">
+      <div style="font:600 10.5px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#3b6fc4;margin-bottom:14px">The company</div>
+      <p style="font:400 16px/1.7 'Public Sans';color:#3f4c5e;margin:0;max-width:74ch">States News Service is an independent publisher based in The Plains, Virginia, delivering to content licensees worldwide. Licensing and client relationships are managed by our sales agent, MEI Global, LLC. Feeds are delivered by SFTP as clean XML or CSV, on the schema each client needs.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band" style="background:#3b6fc4;color:#fff;padding:56px 44px;display:flex;align-items:center;justify-content:space-between;gap:40px">
+    <h2 style="font:500 34px/1.1 'Newsreader',serif;margin:0;max-width:24ch">Build on a record you can trust.</h2>
+    <a href="contact.html" style="display:inline-flex;align-items:center;height:54px;padding:0 32px;background:#fff;color:#0b1f3a;font:600 15px 'Public Sans';border-radius:6px;white-space:nowrap">Get in touch →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#081627;color:#7f9dc9;padding:44px 44px 30px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
+      <div><div style="font:600 18px 'Newsreader',serif;color:#fff;margin-bottom:8px">States News Service</div><div style="font:400 13px/1.6 'Public Sans';max-width:34ch">The straight, unaltered record of government — collected at the source, delivered ready to use.</div></div>
+      <div style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Product</div><a class="nav-link" href="coverage.html" style="display:block">Coverage</a><a class="nav-link" href="how-it-works.html" style="display:block">How it works</a><a class="nav-link" href="clients.html" style="display:block">Clients</a></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Company</div><a class="nav-link" href="about.html" style="display:block">About</a><a class="nav-link" href="contact.html" style="display:block">Contact</a></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Legal</div><a class="nav-link" href="privacy.html" style="display:block">Privacy</a><a class="nav-link" href="terms.html" style="display:block">Terms</a></div>
+      </div>
+    </div>
+    <div style="padding-top:20px;font:400 12px 'Public Sans';display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>© 2026 States News Service</span><span>Official sources. Clean data.</span></div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

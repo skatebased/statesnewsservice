@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Contact — States News Service</title>
+<meta name="description" content="Request access to the States News Service feed. Tell us which jurisdictions, source types and feeds matter to you and we'll send a sample.">
+<meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
+<meta property="og:title" content="Contact — States News Service">
+<meta property="og:description" content="Request access to the primary-source government feed. Tell us what you need and we'll follow up within one business day.">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f7fa;color:#0f1826;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .btn-primary:hover{background:#2f5cab}
+  .cform input,.cform textarea{font-family:'Public Sans',sans-serif;font-size:15px;color:#fff}
+  .cform input::placeholder,.cform textarea::placeholder{color:#8fb2e6;opacity:1}
+  .cform input:focus,.cform textarea:focus{outline:none;border-color:#3b6fc4;box-shadow:0 0 0 3px rgba(59,111,196,.18)}
+  img,iframe{max-width:100%}
+  .nav-toggle{position:absolute;opacity:0;pointer-events:none}
+  .nav-burger{display:none;cursor:pointer;line-height:0}
+  @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}}
+  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:34px !important;line-height:1.08 !important}}
+  .site-nav{transition:opacity .25s ease}
+  .site-nav a{text-shadow:0 1px 3px rgba(6,15,28,.4)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8fb2e6;outline-offset:2px}
+</style>
+<script>
+(function(){if(window.__navHdr)return;window.__navHdr=1;function w(){var n=document.querySelector(".site-nav");if(!n){return setTimeout(w,100);}var last=0,solid=null;n.style.transition="opacity .3s ease, background-color .3s ease, box-shadow .3s ease";function pos(e){var t=e&&e.target;return (t&&t!==document&&t.nodeType===1&&t.scrollTop!=null)?t.scrollTop:(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0);}function setSolid(on){if(on===solid)return;solid=on;if(on){n.style.background="#0b1f3a";n.style.boxShadow="0 6px 20px rgba(8,22,39,.22)";n.style.borderBottom="1px solid rgba(255,255,255,.12)";}else{n.style.background="transparent";n.style.boxShadow="none";n.style.borderBottom="none";}}function apply(y){if(y<=8){n.style.opacity="1";n.style.pointerEvents="";setSolid(false);}else if(y>last+3){n.style.opacity="0";n.style.pointerEvents="none";}else if(y<last-3){n.style.opacity="1";n.style.pointerEvents="";setSolid(true);}last=y;}function s(e){apply(pos(e));}document.addEventListener("scroll",s,true);window.addEventListener("scroll",s,{passive:true});apply(0);}w();})();
+</script>
+</helmet>
+<div style="max-width:1240px;margin:0 auto;background:#f5f7fa">
+
+  <!-- NAV -->
+  <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label><div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
+      <a class="nav-link" href="coverage.html">Coverage</a>
+      <a class="nav-link" href="how-it-works.html">How it works</a>
+      <a class="nav-link" href="clients.html">Clients</a>
+      <a class="nav-link" href="about.html">About</a><a class="btn-primary" href="contact.html" style="background:#3b6fc4;color:#fff;padding:9px 18px;border-radius:5px;font-weight:600">Request access</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div style="background:#0b1f3a;color:#fff;padding:100px 44px 90px">
+    <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+      <div>
+        <div style="font:600 11px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#7f9dc9;margin-bottom:20px">Contact</div>
+        <h1 class="hero-title" style="font:500 52px/1.05 'Newsreader',serif;letter-spacing:-.02em;margin:0 0 18px;max-width:15ch">Tell us what you need.</h1>
+        <p style="font:400 17px/1.62 'Public Sans';color:#bcccdf;max-width:46ch;margin:0 0 30px">Which jurisdictions, source types or feeds matter to you? Send a note and we'll show you what clean, structured data looks like.</p>
+        <div style="display:flex;flex-direction:column;gap:14px;margin:0 0 30px">
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#3b6fc4;font:600 13px 'Public Sans';flex:none;padding-top:1px">01</span><span style="font:400 14.5px/1.5 'Public Sans';color:#c8d6e8">We reply within one business day.</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#3b6fc4;font:600 13px 'Public Sans';flex:none;padding-top:1px">02</span><span style="font:400 14.5px/1.5 'Public Sans';color:#c8d6e8">We scope the sources and jurisdictions you need.</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#3b6fc4;font:600 13px 'Public Sans';flex:none;padding-top:1px">03</span><span style="font:400 14.5px/1.5 'Public Sans';color:#c8d6e8">We send a sample feed so you can see the data.</span></div>
+        </div>
+        <div style="font:400 14px/1.9 'Public Sans';color:#8fb2e6;border-top:1px solid rgba(255,255,255,.1);padding-top:18px">editor@statesnewsservice.com<br><span style="color:#7f9dc9">Delivered by SFTP · XML or CSV</span></div>
+      </div>
+      <form class="cform" id="contact-form" style="display:grid;grid-template-columns:1fr;gap:14px;align-content:start;background:#0f2140;border:1px solid #24406b;border-radius:14px;padding:26px 26px 28px">
+        <input id="cf-name" name="name" required placeholder="Full name" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff">
+        <input id="cf-org" name="org" required placeholder="Organization / institution" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff">
+        <input id="cf-email" name="email" type="email" required placeholder="Work email" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff">
+        <input id="cf-site" name="website" required placeholder="Company or institution website" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff">
+        <textarea id="cf-msg" name="message" rows="5" required placeholder="Which jurisdictions, source types or feeds matter to you?" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff;resize:vertical"></textarea>
+        <button type="submit" class="btn-primary" style="height:52px;background:#3b6fc4;color:#fff;border:none;border-radius:6px;font:600 15px 'Public Sans';cursor:pointer">Send request</button>
+        <p id="cf-status" role="status" style="margin:2px 0 0;font:500 13px 'Public Sans';color:#7f9dc9;min-height:16px">All fields are required. Please use a business email.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div style="background:#f5f7fa;padding:64px 44px 72px">
+    <div style="max-width:1160px;margin:0 auto">
+      <div style="font:600 11px/1 'Public Sans';letter-spacing:.16em;text-transform:uppercase;color:#5a6b81;margin-bottom:12px">Frequently asked</div>
+      <h2 style="font:500 34px/1.12 'Newsreader',serif;margin:0 0 32px;color:#0f1826">Before you reach out.</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px 52px">
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">What exactly do you deliver?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Original press releases and documents from official government and public-interest sources, normalized to one consistent schema — every record sourced and timestamped.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">What formats, and how is it delivered?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Clean XML or CSV, delivered by SFTP. We can push to your systems, or host a box you pull from — whichever fits your pipeline.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How much, and how often?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">A daily feed — roughly 30,000 new articles a month — backed by an archive of more than 6.3 million documents.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">Where does the content come from?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Around 2,500 official, public, non-paywalled sources — the executive, legislative and judicial branches, plus universities, think tanks, advocacy groups, associations and 28 governments abroad.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How do you ensure quality?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Human review plus a zero-error delivery gate on every push — nothing ships unchecked. We've delivered continuously since 1973.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How do we get started?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Send the form above or email editor@statesnewsservice.com. We'll reply within one business day and can send a sample feed so you can see the data.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#081627;color:#7f9dc9;padding:44px 44px 30px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
+      <div><div style="font:600 18px 'Newsreader',serif;color:#fff;margin-bottom:8px">States News Service</div><div style="font:400 13px/1.6 'Public Sans';max-width:34ch">The straight, unaltered record of government — collected at the source, delivered ready to use.</div></div>
+      <div style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Product</div><a class="nav-link" href="coverage.html" style="display:block">Coverage</a><a class="nav-link" href="how-it-works.html" style="display:block">How it works</a><a class="nav-link" href="clients.html" style="display:block">Clients</a></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Company</div><a class="nav-link" href="about.html" style="display:block">About</a><a class="nav-link" href="contact.html" style="display:block">Contact</a><span style="display:block">The Plains, Virginia</span></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Legal</div><a class="nav-link" href="privacy.html" style="display:block">Privacy</a><a class="nav-link" href="terms.html" style="display:block">Terms</a></div>
+      </div>
+    </div>
+    <div style="padding-top:20px;font:400 12px 'Public Sans';display:flex;justify-content:space-between"><span>© 2026 States News Service</span><span>Official sources. Clean data.</span></div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this._wire(); }
+  _wire() {
+    const form = document.getElementById('contact-form');
+    if (!form) { setTimeout(() => this._wire(), 120); return; }
+    if (form.dataset.wired) return;
+    form.dataset.wired = '1';
+    const status = document.getElementById('cf-status');
+    const FREE = ['gmail.com','googlemail.com','yahoo.com','ymail.com','hotmail.com','outlook.com','live.com','msn.com','aol.com','icloud.com','me.com','mac.com','proton.me','protonmail.com','pm.me','gmx.com','gmx.net','mail.com','zoho.com','yandex.com','yandex.ru','qq.com','163.com','hey.com','fastmail.com','privaterelay.appleid.com'];
+    const say = (m, ok) => { status.textContent = m; status.style.color = ok ? '#8fb2e6' : '#f0a9a0'; };
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const g = (id) => (document.getElementById(id).value || '').trim();
+      const name = g('cf-name'), org = g('cf-org'), email = g('cf-email'), site = g('cf-site'), msg = g('cf-msg');
+      if (!name) return say('Please add your full name.');
+      if (!org) return say('Please add your organization or institution.');
+      const em = email.toLowerCase();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) return say('Please enter a valid email address.');
+      if (FREE.includes(em.split('@')[1])) return say('Please use your work email — personal addresses (Gmail, Outlook, etc.) are not accepted.');
+      const web = site.replace(/^https?:\/\//i, '').replace(/^www\./i, '');
+      if (!/^[^\s.]+\.[^\s]{2,}/.test(web)) return say('Please enter your organization website (e.g. example.com).');
+      if (!msg) return say('Please tell us which jurisdictions, source types or feeds matter to you.');
+      say('Sending…', true);
+      const subject = 'Feed inquiry — ' + name + ' (' + org + ')';
+      const body = 'Name: ' + name + '\nOrganization / institution: ' + org + '\nWork email: ' + email + '\nWebsite: ' + site + '\n\nWhat they need:\n' + msg;
+      const mailto = () => { window.location.href = 'mailto:editor@statesnewsservice.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); };
+      const done = () => { form.innerHTML = '<div style="text-align:center;padding:26px 10px"><div style="font:500 30px/1.1 \'Newsreader\',serif;color:#fff;margin-bottom:10px">Thank you.</div><div style="font:400 15px/1.6 \'Public Sans\';color:#c8d6e8">We’ve received your request and will follow up within one business day.</div></div>'; };
+      fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: name, organization: org, email: email, website: site, message: msg }) })
+        .then((r) => { if (!r.ok) throw new Error('http ' + r.status); return r; })
+        .then(done)
+        .catch(() => { mailto(); say('Opening your email client as a fallback — or email editor@statesnewsservice.com directly.', false); });
+    });
+  }
+}
+</script>
+</body>
+</html>
