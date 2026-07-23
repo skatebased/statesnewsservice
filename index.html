@@ -8,9 +8,136 @@
 <body>
 <x-dc>
 <helmet data-dc-atomics>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="uploads/fonts/newsreader-normal-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="uploads/fonts/publicsans-normal-latin.woff2" crossorigin>
+<style>@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-italic-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-italic-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(uploads/fonts/newsreader-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(uploads/fonts/publicsans-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>
 <title>States News Service — The primary-source government & public-interest feed</title>
 <meta name="description" content="States News Service turns ~2,500 official government and public-interest sources into one clean, structured feed — human-reviewed, delivered as XML or CSV. Since 1973.">
 <meta property="og:type" content="website"><link rel="icon" href="favicon.svg"><meta property="og:image" content="og-image.png">
@@ -32,7 +159,7 @@
   .nav-toggle{position:absolute;opacity:0;pointer-events:none}
   .nav-burger{display:none;cursor:pointer;line-height:0}
   @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.stat-grid{grid-template-columns:repeat(2,1fr) !important}.stat-grid>div{border-right:0 !important}.stat-grid>div:nth-child(odd){border-right:1px solid #e2e8f0 !important}.stat-grid>div:nth-child(-n+2){border-bottom:1px solid #e2e8f0 !important}.stat-grid-gap{grid-template-columns:repeat(2,1fr) !important}.logo-strip{display:grid !important;grid-template-columns:repeat(3,1fr)}.logo-strip>div{border-left:0 !important;height:76px !important;padding:16px 22px !important}.logo-grid{grid-template-columns:repeat(3,1fr) !important}.logo-grid>div{border:0 !important;height:92px !important;padding:20px 26px !important}.logo-grid{border-radius:12px !important}.logo-grid+.stat-grid{border-top:1px solid #dce3ec !important;border-radius:12px !important;margin-top:16px !important}.roster-grid{grid-template-columns:repeat(2,1fr) !important}.cta-band{flex-wrap:wrap}}
-  @media (max-width:760px){.site-nav{height:56px !important;padding:0 20px !important;background:#0b1f3a !important;opacity:1 !important;pointer-events:auto !important;box-shadow:0 2px 14px rgba(8,22,39,.35) !important;border-bottom:1px solid rgba(255,255,255,.08) !important}.site-nav>a span:first-child{font-size:17px !important}.nav-burger{display:inline-flex;padding:10px;margin-right:-10px}.nav-links{display:none !important;position:fixed;top:56px;left:0;right:0;background:#0b1f3a;flex-direction:column;align-items:stretch !important;gap:0 !important;font-size:15px !important;padding:4px 0 16px;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 18px 30px rgba(8,22,39,.5)}#nav-toggle:checked ~ .nav-links{display:flex !important}.nav-links a{padding:13px 22px}.nav-links .btn-primary{margin:10px 22px 0 !important;text-align:center;border-radius:6px !important;padding:13px 22px !important}.footer-top{flex-direction:column;gap:30px !important}.footer-cols{gap:26px 48px !important}.footer-bottom{flex-direction:column;gap:6px}.logo-strip{grid-template-columns:repeat(2,1fr)}.logo-strip>div{height:62px !important;padding:14px 20px !important}.logo-grid{grid-template-columns:repeat(2,1fr) !important}.logo-grid>div{height:76px !important;padding:16px 22px !important}.stat-grid>div{padding:20px 22px !important}.stat-grid>div>div:first-child{font-size:28px !important}.stat-grid-gap{padding:28px 26px !important;gap:20px !important}.stat-grid-gap>div>div:first-child{font-size:28px !important}[style*="px 44px"]{padding-left:22px !important;padding-right:22px !important}[style*="padding:100px 44px"]{padding-top:64px !important;padding-bottom:48px !important}[style*="padding:96px 44px"]{padding-top:60px !important}[style*="padding:64px 44px"]{padding-top:44px !important}[style*="padding:56px 44px"]{padding-top:40px !important}[style*="padding:52px 44px"]{padding-top:38px !important}[style*="font:500 66px"],[style*="font:500 64px"]{font-size:38px !important;line-height:1.05 !important}[style*="font:500 52px"],[style*="font:500 44px"]{font-size:33px !important;line-height:1.12 !important}[style*="font:500 34px"],[style*="font:500 32px"],[style*="font:500 30px"]{font-size:25px !important;line-height:1.2 !important}p[style*=" 19px"],p[style*=" 18px"]{font-size:15.5px !important;line-height:1.6 !important}p[style*=" 17px"],p[style*=" 16px"]{font-size:14.5px !important;line-height:1.6 !important}p[style*=" 15.5px"],p[style*=" 15px"]{font-size:14px !important;line-height:1.55 !important}[style*="border-radius:10px"][style*="padding:26px"],[style*="border-radius:12px"][style*="padding:26px"]{padding:18px !important}[style*="padding:46px"]{padding:26px 20px !important}[style*="gap:32px"]{gap:20px !important}.roster-grid{grid-template-columns:repeat(2,1fr) !important;gap:10px !important}.roster-grid>div{padding:13px 15px !important;gap:10px}.roster-grid>div>span:first-child{font-size:12.5px !important}.roster-grid>div>span:last-child{font-size:21px !important}.cov-map{display:none !important}[style*="grid-template-columns:120px 1fr"]{gap:10px !important;padding:24px 0 !important}[style*="repeat(4,1fr);gap"]{grid-template-columns:repeat(2,1fr) !important;gap:12px !important}.card{padding:16px !important}.card p{font-size:12.5px !important;line-height:1.55 !important}.card>div:first-child[style*="width:36px"]{width:30px !important;height:30px !important;margin-bottom:10px !important}[style*="repeat(4,1fr);gap"] [style*="font:600 15.5px"],[style*="repeat(4,1fr);gap"] h3{font-size:14px !important}[style*="repeat(4, 1fr)"]:not(.stat-grid):not(.stat-grid-gap){grid-template-columns:repeat(2,1fr) !important;gap:12px !important}[style*="repeat(4, 1fr)"] div[style*="15.5px"],[style*="repeat(4, 1fr)"] h3{font-size:14px !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  @media (max-width:760px){.site-nav{height:56px !important;padding:0 20px !important;background:#0b1f3a !important;opacity:1 !important;pointer-events:auto !important;box-shadow:0 2px 14px rgba(8,22,39,.35) !important;border-bottom:1px solid rgba(255,255,255,.08) !important}.site-nav>a span:first-child{font-size:17px !important}.nav-burger{display:inline-flex;padding:10px;margin-right:-10px}.nav-links{display:none !important;position:fixed;top:56px;left:0;right:0;background:#0b1f3a;flex-direction:column;align-items:stretch !important;gap:0 !important;font-size:15px !important;padding:4px 0 16px;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 18px 30px rgba(8,22,39,.5)}#nav-toggle:checked ~ .nav-links{display:flex !important}.nav-links a{padding:13px 22px}.nav-links .btn-primary{margin:10px 22px 0 !important;text-align:center;border-radius:6px !important;padding:13px 22px !important}.footer-top{flex-direction:column;gap:30px !important}.footer-cols{gap:26px 48px !important}.footer-bottom{flex-direction:column;gap:6px}.logo-strip{grid-template-columns:repeat(2,1fr)}.logo-strip>div{height:62px !important;padding:14px 20px !important}.logo-grid{grid-template-columns:repeat(2,1fr) !important}.logo-grid>div{height:76px !important;padding:16px 22px !important}.stat-grid>div{padding:20px 22px !important}.stat-grid>div>div:first-child{font-size:28px !important}.stat-grid-gap{padding:28px 26px !important;gap:20px !important}.stat-grid-gap>div>div:first-child{font-size:28px !important}[style*="px 44px"]{padding-left:22px !important;padding-right:22px !important}[style*="padding:100px 44px"]{padding-top:64px !important;padding-bottom:48px !important}[style*="padding:96px 44px"]{padding-top:60px !important}[style*="padding:64px 44px"]{padding-top:44px !important}[style*="padding:56px 44px"]{padding-top:40px !important}[style*="padding:52px 44px"]{padding-top:38px !important}[style*="font:500 66px"],[style*="font:500 64px"]{font-size:38px !important;line-height:1.05 !important}[style*="font:500 52px"],[style*="font:500 44px"]{font-size:33px !important;line-height:1.12 !important}[style*="font:500 34px"],[style*="font:500 32px"],[style*="font:500 30px"]{font-size:25px !important;line-height:1.2 !important}p[style*=" 19px"],p[style*=" 18px"]{font-size:15.5px !important;line-height:1.6 !important}p[style*=" 17px"],p[style*=" 16px"]{font-size:14.5px !important;line-height:1.6 !important}p[style*=" 15.5px"],p[style*=" 15px"]{font-size:14px !important;line-height:1.55 !important}[style*="border-radius:10px"][style*="padding:26px"],[style*="border-radius:12px"][style*="padding:26px"]{padding:18px !important}[style*="padding:46px"]{padding:26px 20px !important}[style*="gap:32px"]{gap:20px !important}.roster-grid{grid-template-columns:repeat(2,1fr) !important;gap:10px !important}.roster-grid>div{padding:13px 15px !important;gap:10px}.roster-grid>div>span:first-child{font-size:12.5px !important}.roster-grid>div>span:last-child{font-size:21px !important}.cov-map{display:none !important}[style*="grid-template-columns:120px 1fr"]{gap:10px !important;padding:24px 0 !important}[style*="repeat(4,1fr);gap"]{grid-template-columns:repeat(2,1fr) !important;gap:12px !important}.card{padding:16px !important}.card p{font-size:12.5px !important;line-height:1.55 !important}.card>div:first-child[style*="width:36px"]{width:30px !important;height:30px !important;margin-bottom:10px !important}[style*="repeat(4,1fr);gap"] [style*="font:600 15.5px"],[style*="repeat(4,1fr);gap"] h3{font-size:14px !important}[style*="repeat(4, 1fr)"]:not(.stat-grid):not(.stat-grid-gap){grid-template-columns:repeat(2,1fr) !important;gap:12px !important}[style*="repeat(4, 1fr)"] div[style*="15.5px"],[style*="repeat(4, 1fr)"] h3{font-size:14px !important}[style*="max(44px"]:not(.site-nav){padding-left:22px !important;padding-right:22px !important}[style*="padding:44px 46px"]{padding:26px 20px !important}[style*="padding:48px 46px"]{padding:28px 20px !important}[style*="padding:28px 30px"]{padding:20px 18px !important}[style*="repeat(5,1fr)"],[style*="repeat(5, 1fr)"]{grid-template-columns:repeat(2,1fr) !important;gap:10px !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
   html,body{overflow-x:hidden}
   .fullbleed{width:100vw;margin-left:calc(50% - 50vw)}
   .hero-media{position:absolute;inset:0;overflow:hidden}
@@ -167,7 +294,7 @@
   </div>
 
   <!-- FOOTER -->
-  <div style="background:#081627;color:#7f9dc9;padding:44px 44px 30px">
+  <div class="fullbleed" style="background:#081627;color:#7f9dc9;padding:44px max(44px,calc(50vw - 576px)) 30px">
     <div class="footer-top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
       <div><div style="font:600 18px 'Newsreader',serif;color:#fff;margin-bottom:8px">States News Service</div><div style="font:400 13px/1.6 'Public Sans';max-width:34ch">The straight, unaltered record of government — collected at the source, delivered ready to use.</div></div>
       <div class="footer-cols" style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
