@@ -32,7 +32,7 @@
   .nav-toggle{position:absolute;opacity:0;pointer-events:none}
   .nav-burger{display:none;cursor:pointer;line-height:0}
   @media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr !important}.cta-band{flex-wrap:wrap}}
-  @media (max-width:760px){.site-nav{height:auto !important;padding:10px 20px !important;flex-wrap:wrap;position:relative}.nav-burger{display:inline-flex}.nav-links{display:none !important;width:100%;flex-direction:column;align-items:flex-start !important;gap:2px !important;font-size:14px !important;padding:8px 0 4px}#nav-toggle:checked ~ .nav-links{display:flex !important}.hero-title{font-size:36px !important;line-height:1.08 !important}}
+  @media (max-width:760px){.site-nav{height:56px !important;padding:0 20px !important;background:#0b1f3a !important;opacity:1 !important;pointer-events:auto !important;box-shadow:0 2px 14px rgba(8,22,39,.35) !important;border-bottom:1px solid rgba(255,255,255,.08) !important}.site-nav>a span:first-child{font-size:17px !important}.nav-burger{display:inline-flex;padding:10px;margin-right:-10px}.nav-links{display:none !important;position:fixed;top:56px;left:0;right:0;background:#0b1f3a;flex-direction:column;align-items:stretch !important;gap:0 !important;font-size:15px !important;padding:4px 0 16px;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 18px 30px rgba(8,22,39,.5)}#nav-toggle:checked ~ .nav-links{display:flex !important}.nav-links a{padding:13px 22px}.nav-links .btn-primary{margin:10px 22px 0 !important;text-align:center;border-radius:6px !important;padding:13px 22px !important}.footer-top{flex-direction:column;gap:30px !important}.footer-cols{gap:26px 48px !important}.footer-bottom{flex-direction:column;gap:6px}.hero-title{font-size:36px !important;line-height:1.08 !important}}
   html,body{overflow-x:hidden}
   .fullbleed{width:100vw;margin-left:calc(50% - 50vw)}
   .hero-media{position:absolute;inset:0;overflow:hidden}
@@ -56,7 +56,7 @@
 
   <!-- NAV -->
   <div class="site-nav" style="background:transparent;color:#fff;padding:0 max(44px, calc(50vw - 576px));height:68px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:50">
-    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span><span style="font:600 9px 'Public Sans';letter-spacing:.14em;color:#7f9dc9;padding:2px 6px;border:1px solid #34517d;border-radius:3px">SINCE 1973</span></a>
+    <a href="index.html" style="display:flex;align-items:baseline;gap:12px"><span style="font:600 20px 'Newsreader',serif">States News Service</span></a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle"><label class="nav-burger" for="nav-toggle" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect y="4" width="22" height="2" rx="1" fill="#fff"></rect><rect y="10" width="22" height="2" rx="1" fill="#fff"></rect><rect y="16" width="22" height="2" rx="1" fill="#fff"></rect></svg></label><div class="nav-links" style="display:flex;align-items:center;gap:30px;font:500 13.5px 'Public Sans';color:#c3d2e8">
       <a class="nav-link" href="coverage.html">Coverage</a>
       <a class="nav-link" href="how-it-works.html">How it works</a>
@@ -168,15 +168,15 @@
 
   <!-- FOOTER -->
   <div style="background:#081627;color:#7f9dc9;padding:44px 44px 30px">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
+    <div class="footer-top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)">
       <div><div style="font:600 18px 'Newsreader',serif;color:#fff;margin-bottom:8px">States News Service</div><div style="font:400 13px/1.6 'Public Sans';max-width:34ch">The straight, unaltered record of government — collected at the source, delivered ready to use.</div></div>
-      <div style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
+      <div class="footer-cols" style="display:flex;gap:56px;flex-wrap:wrap;font:400 13.5px/2 'Public Sans'">
         <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Product</div><a class="nav-link" href="coverage.html" style="display:block">Coverage</a><a class="nav-link" href="how-it-works.html" style="display:block">How it works</a><a class="nav-link" href="clients.html" style="display:block">Clients</a></div>
-        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Company</div><a class="nav-link" href="about.html" style="display:block">About</a><a class="nav-link" href="contact.html" style="display:block">Contact</a><span style="display:block">The Plains, Virginia</span></div>
+        <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Company</div><a class="nav-link" href="about.html" style="display:block">About</a><a class="nav-link" href="contact.html" style="display:block">Contact</a></div>
         <div><div style="color:#fff;font-weight:600;margin-bottom:6px">Legal</div><a class="nav-link" href="privacy.html" style="display:block">Privacy</a><a class="nav-link" href="terms.html" style="display:block">Terms</a></div>
       </div>
     </div>
-    <div style="padding-top:20px;font:400 12px 'Public Sans';display:flex;justify-content:space-between"><span>© 2026 States News Service</span><span>Official sources. Clean data.</span></div>
+    <div class="footer-bottom" style="padding-top:20px;font:400 12px 'Public Sans';display:flex;justify-content:space-between"><span>© 2026 States News Service</span><span>Official sources. Clean data.</span></div>
   </div>
 
 </div>
