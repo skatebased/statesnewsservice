@@ -191,7 +191,7 @@
           <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#3b6fc4;font:600 13px 'Public Sans';flex:none;padding-top:1px">02</span><span style="font:400 14.5px/1.5 'Public Sans';color:#c8d6e8">We scope the sources and jurisdictions you need.</span></div>
           <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#3b6fc4;font:600 13px 'Public Sans';flex:none;padding-top:1px">03</span><span style="font:400 14.5px/1.5 'Public Sans';color:#c8d6e8">We send a sample feed so you can see the data.</span></div>
         </div>
-        <div style="font:400 14px/1.9 'Public Sans';color:#8fb2e6;border-top:1px solid rgba(255,255,255,.1);padding-top:18px">editor@statesnewsservice.com<br><span style="color:#7f9dc9">Delivered by SFTP · XML or CSV</span></div>
+        <div style="font:400 14px/1.9 'Public Sans';color:#8fb2e6;border-top:1px solid rgba(255,255,255,.1);padding-top:18px">contact@statesnewsservice.com<br><span style="color:#7f9dc9">Delivered by SFTP · XML or CSV</span></div>
       </div>
       <form class="cform" id="contact-form" style="display:grid;grid-template-columns:1fr;gap:14px;align-content:start;background:#0f2140;border:1px solid #24406b;border-radius:14px;padding:26px 26px 28px">
         <input id="cf-name" name="name" required placeholder="Full name" style="background:#0b1c38;border:1px solid #34517d;border-radius:6px;padding:13px 14px;color:#fff">
@@ -216,7 +216,7 @@
         <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How much, and how often?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">A daily feed — roughly 30,000 new articles a month — backed by an archive of more than 6.3 million documents.</p></div>
         <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">Where does the content come from?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Around 2,500 official, public, non-paywalled sources — the executive, legislative and judicial branches, plus universities, think tanks, advocacy groups, associations and 28 governments abroad.</p></div>
         <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How do you ensure quality?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Human review plus a zero-error delivery gate on every push — nothing ships unchecked. We've delivered continuously since 1973.</p></div>
-        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How do we get started?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Send the form above or email editor@statesnewsservice.com. We'll reply within one business day and can send a sample feed so you can see the data.</p></div>
+        <div><h3 style="font:600 16px 'Public Sans';margin:0 0 7px;color:#0f1826">How do we get started?</h3><p style="font:400 14.5px/1.65 'Public Sans';color:#5a6b81;margin:0">Send the form above or email contact@statesnewsservice.com. We'll reply within one business day and can send a sample feed so you can see the data.</p></div>
       </div>
     </div>
   </div>
@@ -262,12 +262,12 @@ class Component extends DCLogic {
       say('Sending…', true);
       const subject = 'Feed inquiry — ' + name + ' (' + org + ')';
       const body = 'Name: ' + name + '\nOrganization / institution: ' + org + '\nWork email: ' + email + '\nWebsite: ' + site + '\n\nWhat they need:\n' + msg;
-      const mailto = () => { window.location.href = 'mailto:editor@statesnewsservice.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); };
+      const mailto = () => { window.location.href = 'mailto:contact@statesnewsservice.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); };
       const done = () => { form.innerHTML = '<div style="text-align:center;padding:26px 10px"><div style="font:500 30px/1.1 \'Newsreader\',serif;color:#fff;margin-bottom:10px">Thank you.</div><div style="font:400 15px/1.6 \'Public Sans\';color:#c8d6e8">We’ve received your request and will follow up within one business day.</div></div>'; };
       fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: name, organization: org, email: email, website: site, message: msg }) })
         .then((r) => { if (!r.ok) throw new Error('http ' + r.status); return r; })
         .then(done)
-        .catch(() => { mailto(); say('Opening your email client as a fallback — or email editor@statesnewsservice.com directly.', false); });
+        .catch(() => { mailto(); say('Opening your email client as a fallback — or email contact@statesnewsservice.com directly.', false); });
     });
   }
 }
